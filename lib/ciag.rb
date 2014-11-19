@@ -126,31 +126,5 @@ class Ciag < Array
     end
     return self
   end
-
-  # def substring?(a, b)
-  #   position = 0
-  #   a.each_with_index do |v, i|
-  #     if v == b[position] and (i + b.size - position) <= a.size
-  #       position += 1
-  #     elsif position == b.size
-  #       return true
-  #     else
-  #       position = 0
-  #     end
-  #   end
-
-  #   position == b.size
-  # end
-
-
-
-
-
-
-
-
-
-
-
-
+  
 end
