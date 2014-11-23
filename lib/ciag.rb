@@ -13,7 +13,6 @@ class Ciag < Array
 
 	def isFibonacci?
 		if self.length<=1 then
-      puts "This is not a sequence."
       return false
     else
       step = self[1]-self[0]
@@ -29,7 +28,6 @@ class Ciag < Array
 
 	def isAritmethic?
 		if self.length<=1 then
-			puts "This is not a sequence."
       return false
 		else
 			step = self[1]-self[0]
@@ -45,7 +43,6 @@ class Ciag < Array
 
   def isGeometric?
     if self.length<=1 then
-      puts "This is not a sequence."
       return false
     else
       multiplier = self[1]/self[0]
