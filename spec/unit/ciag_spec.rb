@@ -119,11 +119,11 @@ describe Ciag do
 		let (:second) { Ciag.new().setSeq([1,2,3,4,5]) }
 		let (:result) { Ciag.new().addSequences(first, second) }
 
-		it "adds sequences to each other" do
+		it "adds first(shorter) sequence to the second(longer)" do
 			expect(result).to eq([3,6,9,12,5])
 		end
 
-		it "substracts first sequence from the second" do
+		it "adds second(longer) sequence to the first(shorter)" do
 			expect(Ciag.new().addSequences(second,first)).to eq([3,6,9,12,5])
 		end
 	end
@@ -133,11 +133,11 @@ describe Ciag do
 		let (:second) { Ciag.new().setSeq([1,2,3,4,5]) }
 		let (:result) { Ciag.new().substractSequences(first, second) }
 
-		it "substracts second sequence from first sequence" do
+		it "substracts the second(longer) sequence from first(shorter) sequence" do
 			expect(result).to eq([1,2,3,4,-5])
 		end
 
-		it "substracts first sequence from the second" do
+		it "substracts first(shorter) sequence from the second(longer) sequence" do
 			expect(Ciag.new().substractSequences(second,first)).to eq([-1,-2,-3,-4,5])
 		end
 	end
@@ -147,11 +147,11 @@ describe Ciag do
 		let (:second) { Ciag.new().setSeq([1,2,3,4,5]) }
 		let (:result) { Ciag.new().multiplySequences(first, second) }
 
-		it "multiplies sequences" do
+		it "multiplies first(shorter) sequence by second (longer) sequence" do
 			expect(result).to eq([2, 8, 18, 32, 0])
 		end
 
-		it "substracts first sequence from the second" do
+		it "multiplies second(longer) sequence by the first(shorter)" do
 			expect(Ciag.new().multiplySequences(second,first)).to eq([2, 8, 18, 32, 0])
 		end
 	end
