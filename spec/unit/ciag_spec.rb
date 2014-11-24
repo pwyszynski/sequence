@@ -37,7 +37,7 @@ describe Ciag do
 			expect(is.isAritmethic?).to eq(true)
 		end
 
-		it "returns false if subsequence is aritmethic" do
+		it "returns false if subsequence isn't aritmethic" do
 			expect(isnt.isAritmethic?).to eq(false)
 		end
 
@@ -55,7 +55,7 @@ describe Ciag do
 			expect(is.isGeometric?).to eq(true)
 		end
 
-		it "returns false if subsequence is geometric" do
+		it "returns false if subsequence isn't geometric" do
 			expect(isnt.isGeometric?).to eq(false)
 		end
 
@@ -73,7 +73,7 @@ describe Ciag do
 			expect(is.isFibonacci?).to eq(true)
 		end
 
-		it "returns false if subsequence is Fibonacci" do
+		it "returns false if subsequence isn't Fibonacci" do
 			expect(isnt.isFibonacci?).to eq(false)
 		end
 
