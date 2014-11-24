@@ -33,14 +33,13 @@ def checker
 
 	b = Ciag.new
 	b.setSeq(a)
-
-
-	if b.isFibonacci? == true then 
-		puts "This is a Fibonacci sequence."
-	elsif b.isAritmethic? == true then
+	
+	if b.isAritmethic? == true then
 		puts "This is an aritmethic sequence."
 	elsif b.isGeometric? == true then
 		puts "This is a geometric sequence"
+	elsif b.isFibonacci? == true then 
+		puts "This is a Fibonacci sequence."
 	else
 		puts "This is not a recognizable sequence"
 	end
@@ -78,7 +77,7 @@ def operations
 		c.setSeq(a)
 
 		d = Ciag.new
-		d.addSequences(b,c)
+		d = d.addSequences(b,c)
 
 		p d
 
@@ -99,7 +98,7 @@ def operations
 		c.setSeq(a)
 
 		d = Ciag.new
-		d.substractSequences(b,c)
+		d = d.substractSequences(b,c)
 
 		p d
 
@@ -120,7 +119,7 @@ def operations
 		c.setSeq(a)
 
 		d = Ciag.new
-		d.multiplySequences(b,c)
+		d = d.multiplySequences(b,c)
 
 		p d
 
