@@ -14,6 +14,7 @@ describe Ciag do
 
 	describe "#setSeq" do
 		let(:ary) { ary = [1,2,3] }
+		let(:arylen) { ary.length }
 
 		it "sets the subsequence with given array" do
 			expect(Ciag.new().setSeq(ary)).to eq([1,2,3])
@@ -21,8 +22,6 @@ describe Ciag do
 
 		it "has the length of the array given" do
 			expect {
-				ary = [1,2,3]
-				arylen = ary.length
 				Ciag.setSeq(ary).lenght.to eq(arylen)
 			}
 		end
