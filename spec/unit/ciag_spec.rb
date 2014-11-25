@@ -15,15 +15,15 @@ describe Ciag do
 	describe "#setSeq" do
 		let(:ary) { ary = [1,2,3] }
 		let(:arylen) { ary.length }
+		let(:seq) { Ciag.new().setSeq(ary) }
+		let(:seqlen) { seq.length }
 
 		it "sets the subsequence with given array" do
-			expect(Ciag.new().setSeq(ary)).to eq([1,2,3])
+			expect(seq).to eq([1,2,3])
 		end
 
 		it "has the length of the array given" do
-			expect {
-				Ciag.setSeq(ary).lenght.to eq(arylen)
-			}
+			expect(seqlen).to eq(arylen)
 		end
 	end
 

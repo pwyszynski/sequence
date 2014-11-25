@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-11-25T21:19:07+01:00">2014-11-25T21:19:07+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-11-25T21:25:38+01:00">2014-11-25T21:25:38+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">99.16%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.55
+         3.63
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>119</b> relevant lines. 
-    <span class="green"><b>118</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>120</b> relevant lines. 
+    <span class="green"><b>120</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>33</td>
         <td>33</td>
         <td>0</td>
-        <td>7.5</td>
+        <td>7.7</td>
       </tr>
       
       <tr>
@@ -72,12 +72,12 @@
       
       <tr>
         <td class="strong"><a href="#e8e6634bcfa30875b1ec5f1ad97eabd96c3c5f9c" class="src_link" title="spec/unit/ciag_spec.rb">spec/unit/ciag_spec.rb</a></td>
-        <td class="green strong">97.83 %</td>
+        <td class="green strong">100.0 %</td>
         <td>83</td>
-        <td>46</td>
-        <td>45</td>
-        <td>1</td>
-        <td>1.2</td>
+        <td>47</td>
+        <td>47</td>
+        <td>0</td>
+        <td>1.3</td>
       </tr>
       
     </tbody>
@@ -146,8 +146,8 @@
           <code class="ruby">	def initialize()</code>
         </li>
       
-        <li class="covered" data-hits="35" data-linenumber="7">
-          <span class="hits">35</span>
+        <li class="covered" data-hits="36" data-linenumber="7">
+          <span class="hits">36</span>
           
           <code class="ruby">		super()</code>
         </li>
@@ -170,14 +170,14 @@
           <code class="ruby">	def setSeq(w)</code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="11">
-          <span class="hits">27</span>
+        <li class="covered" data-hits="28" data-linenumber="11">
+          <span class="hits">28</span>
           
           <code class="ruby">		for i in (0...w.length) do</code>
         </li>
       
-        <li class="covered" data-hits="105" data-linenumber="12">
-          <span class="hits">105</span>
+        <li class="covered" data-hits="108" data-linenumber="12">
+          <span class="hits">108</span>
           
           <code class="ruby">			self[i] = w[i]</code>
         </li>
@@ -188,8 +188,8 @@
           <code class="ruby">		end</code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="14">
-          <span class="hits">27</span>
+        <li class="covered" data-hits="28" data-linenumber="14">
+          <span class="hits">28</span>
           
           <code class="ruby">		return self</code>
         </li>
@@ -927,11 +927,11 @@
         <div class="source_table" id="e8e6634bcfa30875b1ec5f1ad97eabd96c3c5f9c">
   <div class="header">
     <h3>spec/unit/ciag_spec.rb</h3>
-    <h4><span class="green">97.83 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>46</b> relevant lines. 
-      <span class="green"><b>45</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>47</b> relevant lines. 
+      <span class="green"><b>47</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1028,70 +1028,70 @@
           <code class="ruby">	describe &quot;#setSeq&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">		let(:ary) { ary = [1,2,3] }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
           
           <code class="ruby">		let(:arylen) { ary.length }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="3" data-linenumber="18">
+          <span class="hits">3</span>
+          
+          <code class="ruby">		let(:seq) { Ciag.new().setSeq(ary) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		let(:seqlen) { seq.length }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">		it &quot;sets the subsequence with given array&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">			expect(Ciag.new().setSeq(ary)).to eq([1,2,3])</code>
+          <code class="ruby">			expect(seq).to eq([1,2,3])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">		end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
           <code class="ruby">		it &quot;has the length of the array given&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">			expect {</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
-          
-          <code class="ruby">				Ciag.setSeq(ary).lenght.to eq(arylen)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">			}</code>
+          <code class="ruby">			expect(seqlen).to eq(arylen)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
