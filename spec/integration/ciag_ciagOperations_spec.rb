@@ -3,7 +3,8 @@ require_relative '../../lib/ciag.rb'
 require_relative '../../lib/ciagOperations.rb'
 
 
-describe ciagOperations do
+describe CiagOperations do
+	let(:dummy_class) { Class.new { include CiagOperations } }
 
 	describe "#addZeros" do
 		it "adds given number of zeros to subsequence" do
