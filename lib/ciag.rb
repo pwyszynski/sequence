@@ -1,4 +1,7 @@
+require_relative "ciagOperations.rb"
+
 class Ciag < Array
+  include CiagOperations
 
 	def initialize()
 		super()

@@ -1,6 +1,4 @@
-require_relative 'ciag.rb'
-
-class ciagOperations
+module CiagOperations
 
 	def addSequences(a, b)
     dlA = a.length
